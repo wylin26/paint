@@ -1,0 +1,113 @@
+
+
+body {
+	font-family: sans-serif;
+	background-color: #000000;
+}
+
+ canvas {
+	
+	border: 1px solid #FFF;
+
+} 
+#drawingCanvas { 
+ position:absolute; 
+ border:none; 
+ color:#ffffff; 
+ overflow:hidden; 
+ background-color:transparent; 
+ } 
+#tempCanvas { 
+	position: absolute;
+	width:650px; 
+	height:520px; 
+	overflow:hidden; 
+}
+
+button {
+	border-radius: 28px;
+	color: white;
+	background-color: rgb(55,65,64);
+
+}
+
+select {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+input {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+.title {
+	background-color: #d8d7d9;
+	padding: 15px;
+	font-weight: bold;
+	font-size: 100%;
+	color: rgb(220,53,34);
+	border: 
+}
+
+.centerCanvas {
+	width: 850px;
+	margin: 20px auto;
+}
+
+.canvas {
+	width: 650px;
+	float: left;
+}
+
+.layers {
+	position: absolute;
+}
+
+.canvasBackgroundColor {
+	width: 650px;
+	height: 520px;
+	background-color: #ffffff;
+	position: absolute;
+}
+
+.aside {
+	height: 520px;
+	width: 180px;
+	background-color: #d8d7d9;
+	box-shadow: 3px 3px 4px 3px #000000;
+	float: left;
+}
+
+.strokeToolbar {
+	margin: 14px 14px;
+	font-weight: bold;
+}
+
+.controlStroke {
+	width: 25px;
+	height: 25px;
+	text-align: center;
+	background-color: rgb(220,53,34);
+	display: inline-block;
+	margin: 0 2px;
+	font-size: 110%;
+
+}
+
+
+
+.clearCanvas {
+	margin-bottom: 10px;
+}
+
+#strokeVal {
+	margin: 0 10px;
+}
+
+
+
+
+
+

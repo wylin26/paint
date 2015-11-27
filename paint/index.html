@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Paint App</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="title">
+      <h3>PAINT WITH WAYUA</h3>
+      
+    </div>
+
+    <div class="centerCanvas">
+      <div class="aside">
+        <div class="strokeToolbar">
+          STROKE
+          <img src="images/minus.png" width="16" height="16" id="stroke-subtract" title="Decrease Stroke" onclick="context.lineWidth--;" /> 
+<img src="images/plus.png" width="16" height="16" id="stroke-add" title="Increase Stroke" onclick="context.lineWidth++;" /> 
+        </div>
+        
+        <div class="shapesToolbar">
+          <p><!-- Tool Selector -->
+        <select name="selector" id="selector"> 
+        <option value="chalk">Chalk</option> 
+        <option value="line">Line</option> 
+        <option value="rect">Rectangle</option>
+        
+        </select> 
+      </p>
+  <!-- Color Table (controlled in JavaScript) -->
+<div id="colorTable"></div> 
+<!-- Toggle Color Button -->
+<div id="color" title="Toggle Color"> 
+<input type="color" id="wayiwa" value="#890345"/>
+</div>
+<!--Clear canvas-->
+<div class="clearCanvas" id="clearCanvas">
+          <a href="javascript:location.reload(true)"> 
+<img src="images/clear.png" alt = "Clear Canvas" />
+</a> 
+        </div>
+          
+        </div>
+      </div>
+      <div class="canvas">
+        <div class="canvasBackgroundColor"></div>
+       
+        <canvas id="drawingCanvas" width="650" height="520" > 
+  <p class="noscript">We're sorry, this web application is currently not supported with your browser. Please use an alternate browser or download a supported <br />browser. 
+  Supported browsers: 
+  <a href="http://www.google.com/chrome">Google Chrome</a>, 
+  <a href="http://www.opera.com">Opera</a>, 
+  <a href="http://www.mozilla.com">Firefox</a>, 
+  <a href="http://www.apple.com/safari">Safari</a>, 
+  <br />and <a href="http://www.konqueror.org">Konqueror</a>. 
+  Also make sure your JavaScript is enabled.</p> 
+</canvas> 
+      </div>
+    </div>
+    
+    <script type="text/javascript" src="js/canvas.js"></script>
+
+    
+    
+    
+  </body>
+</html>
